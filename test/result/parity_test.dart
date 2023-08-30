@@ -1,5 +1,5 @@
 import "package:test/test.dart";
-import "package:sealed_result/result.dart";
+import "package:result_o3/result.dart";
 
 enum Parity {
   even,

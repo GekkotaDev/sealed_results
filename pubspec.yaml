@@ -1,5 +1,5 @@
-name: sealed_result
-description: A starting point for Dart libraries or applications.
+name: result_o3
+description: A Result type inspired by Rust for the Dart programming language
 version: 1.0.0
 repository: https://github.com/gekkotadev/sealed_results
 
