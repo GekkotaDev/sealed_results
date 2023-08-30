@@ -71,6 +71,16 @@ final class Ok<T, E extends Object> implements Result<T, E> {
   const Ok(this.value);
 
   @override
+  bool operator ==(Object other) {
+    final comparedResult = other;
+    if (comparedResult is Ok) return comparedResult.value == value;
+    return false;
+  }
+
+  @override
+  int get hashCode => value.hashCode;
+
+  @override
   T call() => value;
 
   @override
@@ -102,6 +112,16 @@ final class Err<T, E extends Object> implements Result<T, E> {
 
   /// Provide an error.
   const Err(this.error);
+
+  @override
+  bool operator ==(Object other) {
+    final comparedResult = other;
+    if (comparedResult is Err) return comparedResult.error == error;
+    return false;
+  }
+
+  @override
+  int get hashCode => error.hashCode;
 
   @override
   E call() => error;

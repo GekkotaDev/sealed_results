@@ -14,7 +14,7 @@ Result<Parity, Error> parityOf(num number) => switch (number) {
         }
     };
 
-// TODO: Write a better test using this.
+// TODO: Write a better test.
 void main() {
   group("Integer number:", () {
     test("3.14", () {
@@ -43,5 +43,12 @@ void main() {
 
       expect(validity, true);
     });
+  });
+
+  test("are equal", () {
+    const x = Ok(42);
+    const y = Ok(42);
+
+    expect(x == y, true);
   });
 }
