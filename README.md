@@ -12,3 +12,5 @@ and the Flutter guide for
 -->
 
 # result_o3
+
+A Result type inspired from Rust.

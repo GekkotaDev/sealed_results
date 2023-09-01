@@ -1,6 +1,6 @@
 name: result_o3
 description: A Result type inspired by Rust for the Dart programming language
-version: 1.0.0
+version: 1.0.1
 repository: https://github.com/gekkotadev/sealed_results
 
 environment:
